@@ -30,6 +30,24 @@
 
              */
             #endregion
+
+            #region Q2
+            /*
+             field                                      Vs                     property
+            1- can be accessed directly                        1- can be accessed through get/set methods
+            2- no control over how the data is accessed        2- can control how the data is accessed and modified
+            3- no encapsulation                                3- supports encapsulation
+            4- no validation or logic can be applied when      4- can apply validation or logic 
+             
+             * ptoprety (full property or indexer)  can contain complix logic in the get and set accessors, 
+             * while auto-implemented properties are a shorthand syntax for properties that do not require additional logic in the accessors. 
+             
+
+            ##    public double Balance { get; private set; } (read only outside class can setter it only in class)
+            ##   public double Balance { get;  } ( always read only  )
+            ##    public double Balance => _balance; ( expression-bodied property, read only and can contain logic in the expression)
+             */
+            #endregion
             #endregion
         }
     }
