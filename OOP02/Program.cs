@@ -48,6 +48,35 @@
             ##    public double Balance => _balance; ( expression-bodied property, read only and can contain logic in the expression)
              */
             #endregion
+
+            #region Q3
+            /*
+             ## a : indexer is a special property that accepted parametars (always named (this))
+           prupose: to allow objects to be indexed like arrays or collections
+
+            =====================================================================================
+            ## b :   private string[] names = new string[5]; 
+                    register[10] = "Ali";  throw exception (out of rang execption) 
+                   because don't have index 10, last index is [4] and we don't hadle the exception, so it will crash the program.
+
+            handle the exception :
+                    set {
+
+                   if (index >= 0 && index < names.Length)
+                      names[index] = value;
+            }
+            in this way we can prevent the program from crashing and handle the 
+
+            =====================================================================================
+
+            ## c : class have more than one indexer (must be with different parametars)
+            EX: "As a librarian, I want a Library system where I can add books, find a book by its shelf position, or look it up by ISBN — like a real catalog."
+            in this example, we can have two indexers in the Library class: 
+            one that takes an integer parameter for shelf position and another that takes a string parameter for ISBN. This allows us to access books in different ways 
+
+
+              */
+            #endregion
             #endregion
         }
     }
