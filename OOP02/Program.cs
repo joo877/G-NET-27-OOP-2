@@ -77,6 +77,32 @@
 
               */
             #endregion
+
+            #region Q4
+            /*
+             public class Order
+             {
+                 public static int TotalOrders = 0;
+                 public string Item;
+              
+                 public Order(string item)
+                 {
+                     Item = item;
+                     TotalOrders++;
+                 }
+
+           
+              ## a : static keyword means it member is class member ( can use it dirict from class ),
+              don't need to create an instance from class to use it 
+             TotalOrders : is a static member, which means it belongs to the Order class itself and is shared among all instances of the class.
+             Item : is an instance member, which means it belongs to a specific instance of the Order class. 
+             
+
+
+            ## b : static method : cannot access instance members directly because they do not belong to any specific instance of the class.
+               any fields in the static method must also be static, because they need to be accessed without an instance of the class.
+             */
+            #endregion
             #endregion
         }
     }
