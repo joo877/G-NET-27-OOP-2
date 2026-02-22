@@ -1,4 +1,7 @@
-﻿namespace OOP02
+﻿
+using OOP02.Enum;
+
+namespace OOP02
 {
     internal class Program
     {
@@ -103,6 +106,64 @@
                any fields in the static method must also be static, because they need to be accessed without an instance of the class.
              */
             #endregion
+            #endregion
+
+            #region part02
+            //Cinema cinema = new Cinema();
+            //Console.WriteLine(":::::: Ticket Booking ::::::::\n");
+            //  for (int i = 0; i < 3; i++)
+            //    {
+
+            //    Console.WriteLine($"Enter data for Ticket {i+1}:");
+            //    Console.Write(" Movie Name: ");
+            //    string movieNameInput = Console.ReadLine();
+
+            //    Console.Write(" Ticket Type (0 = Standard , 1 = VIP , 2 = IMAX ):");
+            //    Enum.Type ticketTypeInput = (Enum.Type)int.Parse(Console.ReadLine());
+
+
+
+            //    Console.Write(" Seat Row (A-Z): ");
+            //    char seatRowInput = Console.ReadKey().KeyChar;
+            //    Console.WriteLine();
+            //    Console.Write(" Seat Number:");
+            //    int seatNumberInput = int.Parse(Console.ReadLine());
+
+            //    Console.Write(" Price:");
+            //    int priceInput= int.Parse(Console.ReadLine());
+            //    Console.WriteLine();
+
+            //    Ticket ticket = new Ticket(movieNameInput, ticketTypeInput,new Seat(seatRowInput, seatNumberInput) , priceInput);
+
+               
+            //    cinema[i]= ticket;
+               
+
+            //}
+
+            //Console.WriteLine("::::: All Tickets :::::\n");
+
+            //Console.WriteLine($"Ticket #{cinema[0].TicketId} | {cinema[0].MoveName}  | {cinema[0].Ticket_Type} | seat:{cinema[0].Seat_location.Row}-{cinema[0].Seat_location.Number} | price : {cinema[0].Price} EGP | After Tax: {cinema[0].PriceAfterTax} ");
+            //Console.WriteLine($"Ticket #{cinema[1].TicketId} | {cinema[1].MoveName}  | {cinema[1].Ticket_Type} | seat:{cinema[1].Seat_location.Row}-{cinema[1].Seat_location.Number} | price : {cinema[1].Price} EGP | After Tax: {cinema[1].PriceAfterTax} ");
+            //Console.WriteLine($"Ticket #{cinema[2].TicketId} | {cinema[2].MoveName}  | {cinema[2].Ticket_Type} | seat:{cinema[2].Seat_location.Row}-{cinema[2].Seat_location.Number} | price : {cinema[2].Price} EGP | After Tax: {cinema[2].PriceAfterTax}\n ");
+
+
+           
+            //Console.WriteLine("::::::::   Search by Movie :::::::::\n");
+            //Console.Write("Enter movie name to search: ");
+            //string movieNameSearch = Console.ReadLine();
+            //if (cinema[movieNameSearch]  == null) 
+            //    Console.WriteLine("Movie Not Found");
+            //Console.WriteLine($"Found : Ticket  #{cinema[movieNameSearch].TicketId} | {cinema[movieNameSearch].MoveName}  | {cinema[movieNameSearch].Ticket_Type} | seat:{cinema[movieNameSearch].Seat_location.Row}-{cinema[movieNameSearch].Seat_location.Number} | price : {cinema[movieNameSearch].Price} EGP \n");
+
+
+
+
+            //Console.WriteLine(":::::::: more information :::::::::::\n");
+            //Console.WriteLine($"total tickets sold : {Ticket.GetTotalTicketsSold()}");
+            //Console.WriteLine( $"booking references : { BookingHelper.GenerateBookingReference()}");
+            //Console.WriteLine($"booking references : {BookingHelper.GenerateBookingReference()}");
+            //Console.WriteLine($"After group discount  : {BookingHelper.CalcGroupDiscount(5,80)}");
             #endregion
         }
     }
